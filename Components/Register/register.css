@@ -1,0 +1,138 @@
+.parent-container {
+  display: flex;
+  align-items: stretch;
+}
+
+#logroot {
+  margin-top: 0.6em;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4%;
+  border-radius: 100%;
+}
+#newContainer,
+#loginroot {
+  margin-top: 8em;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4%;
+  border-radius: 100%;
+}
+@media screen and (max-width: 850px) {
+  #newContainer,
+  #logroot,
+  #loginroot {
+    width: 90%;
+    margin-top: 4rem;
+  }
+}
+#loginSec {
+  width: 95%;
+  /* max-width: 420px; */
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f5f5fc;
+  border-radius: 8%;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 0.5;
+  padding-bottom: 0.1rem;
+}
+
+a,
+a:visited {
+  text-decoration: underline;
+  color: rgb(108, 104, 104);
+}
+a:hover {
+  text-decoration: none;
+}
+
+#username,
+#firstName,
+#middleName,
+#lastName,
+#password,
+#email,
+#confirm_pwd {
+  font-family: "Nunito", sans-serif;
+  /* font-size: 18px; */
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+#logbutton {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  width: 35%;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  background-color: rgb(2 132 199);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+#logbutton:hover {
+  background-color: rgb(56 189 248);
+  transform: scale(1.1);
+}
+
+label,
+#logbutton {
+  margin-top: 1rem;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
